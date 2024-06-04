@@ -1,0 +1,109 @@
+/* <uniquifier>: Use a unique and descriptive class name */
+/* <weight>: Use a value from 400 to 900 */
+
+.orbitron-calc {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    font-family: "Orbitron", sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.calcContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 700px;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    background: skyblue;
+}
+
+#screen {
+    margin: 10px auto 25px auto;
+    display: flex;
+    flex: 1;
+    width: 360px;
+    height: 90px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background: #fff;
+    font-size: 36px;
+    justify-content: end;
+    align-items: center;
+    padding: 0 15px;
+    overflow-x: hidden;
+}
+
+
+.row {
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    background: none;
+    border: none;
+}
+
+.col {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: #fff;
+    font-size: 24px;
+    height: 80px;
+}
+
+button {
+    justify-content: center;
+    align-items: center;
+    font-family: "Orbitron", sans-serif;
+}
+
+.highlight {
+    background-color: #222;
+    color: #fff;
+}
+
+.col:hover, .highlight {
+    background: #222;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .calcContainer {
+        width: 70%;
+        height: 80%;
+    }
+
+    #screen {
+        width: 85%;
+    }
+
+    h1 {
+        margin: 50px auto -25px auto;
+    }
+
+    .col {
+        font-size: 16px;
+    }
+}
