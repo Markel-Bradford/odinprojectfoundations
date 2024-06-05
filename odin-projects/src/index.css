@@ -19,9 +19,18 @@ body {
   height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.title {
+  font-size: 48px;
+  margin-bottom: -10px;
+}
+
+.intro-container {
+  max-width: 800px;
+  margin-bottom: 25px;
+}
+
+.intro {
+  font-size: 20px;
 }
 
 .home {
@@ -38,24 +47,66 @@ h1 {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .thumbnailImg {
-  display: flex;
   flex: 1 1 auto;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  max-width: 40%;
+  width: 40%;
   border-radius: 12px;
   border: 2px solid #fff;
 }
 
-img:hover {
+.thumbnailImg:hover {
   border: 2px solid blue;
   transition: 0.5s;
   transform: scale(1.1);
 }
+
+.homeBtn {
+  position: fixed;
+  display: block;
+  margin: 10px 10px 0 0;
+  top: 0;
+  right: 0;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background: #213547;
+}
+
+.homeBtn:hover {
+  background: green;
+  transition: .5s;
+}
+
+@media (prefers-color-scheme: dark) {
+  .github {
+    display: none;
+  }
+}
+
+.github, .whiteGithub {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  margin: 0 10px 10px 0;
+  border-radius: 100px;
+  padding: 0;
+  
+}
+
+.github:hover, .whiteGithub:hover {
+  transform: scale(1.1);
+  border: 2px solid blue;
+  transition: .2s;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -63,7 +114,30 @@ img:hover {
     background-color: #ffffff;
   }
 
+  .homeBtn {
+    background: #213547;
+    color: #fff;
+  }
+
+  .whiteGithub {
+    display: none;
+  }
+
   .thumbnailImg {
     border: 2px solid black;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home {
+    margin: 0 20px;
+  }
+
+  .intro {
+    margin-top: 40px;
+  }
+  
+  .thumbnailImg {
+    width: 80%;
   }
 }

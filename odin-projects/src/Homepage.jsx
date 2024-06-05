@@ -1,15 +1,23 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Homepage = () => {
   return (
-    <div className="home">
-      <h1>Completed Odin Projects</h1>
-      <p>
+    <motion.div 
+    initial={{scale: 0}}
+    animate={{scale: 1, transition:{duration: .2}}}
+    exit={{scale: 0, transition:{duration: .2}}}
+    className="home">
+      <h1 className="title">Completed Odin Projects</h1>
+      <div className="intro-container">
+      <p className="intro">
         Below, you will find a collection of my completed Odin projects that
         demonstrate my understanding of the foundations of web development,
-        HTML, CSS, and JavaScript.
+        HTML, CSS, and JavaScript. Click the thumbnail to view the page and 
+        a link to the repository.
       </p>
+      </div>
       <div className="thumbnails">
         <Link to="/landingpage">
           <img
@@ -40,6 +48,6 @@ export const Homepage = () => {
           />
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };

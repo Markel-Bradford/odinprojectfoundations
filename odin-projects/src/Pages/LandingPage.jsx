@@ -1,9 +1,15 @@
 import React from "react";
 import './lpstyles.css'
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
     return (
-    <div className=".lp-body">
+    <motion.div 
+    initial={{scale: 0}}
+    animate={{scale: 1, transition:{duration: .2}}}
+    eit={{scaleX: 0, transition:{duration: .2}}}
+    className=".lp-body">
       <header className="header">
         <nav>
           <p className="logo">Beyond Fitness</p>
@@ -94,10 +100,17 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
+      <Link to="/">
+        <button className="homeBtn">Back to Home</button>
+      </Link>
+      <a href="https://github.com/Markel-Bradford/landingpage" target="_blank">
+        <img className="whiteGithub" src="images/whitegithub.png" alt="white git hub logo" />
+        <img className="github" src="images/github.png" alt="github logo" />
+      </a>
       <footer className="footer">
         <p>Copyright &copy; Markel Bradford 2024</p>
       </footer>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./rpsstyles.css";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const RPS = () => {
   useEffect(() => {
@@ -163,7 +165,10 @@ const RPS = () => {
   }, [])
   
     return (
-    <div className="rps-body">
+      <motion.div 
+      initial={{scale: 0}}
+      animate={{scale: 1, transition:{duration: .2}}}
+      exit={{scale: 0, transition:{duration: .2}}} className="rps-body">
       <header className="rps-header">
         <h1>ROSHAMBO!!!!</h1>
       </header>
@@ -209,10 +214,17 @@ const RPS = () => {
           Reset
         </button>
       </div>
-      <footer>
+      <Link to="/">
+        <button className="homeBtn">Back to Home</button>
+      </Link>
+      <a href="https://github.com/Markel-Bradford/rockpaperscissors" target="_blank">
+        <img className="whiteGithub" src="images/whitegithub.png" alt="white git hub logo" />
+        <img className="github" src="images/github.png" alt="github logo" />
+      </a>
+      <footer className="rps-footer">
         <p>&copy; Markel Bradford 2024</p>
       </footer>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./etchasketchstyles.css";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const EtchASketch = () => {
   useEffect(() => {
@@ -122,7 +124,10 @@ const EtchASketch = () => {
   }, []);
 
   return (
-    <div className="eas-body">
+    <motion.div 
+    initial={{scale: 0}}
+    animate={{scale: 1, transition:{duration: .2}}}
+    exit={{scale: 0, transition:{duration: .2}}} className="eas-body">
       <h1>Etch-a-Sketch</h1>
       <div className="btnContainer">
         <button className="eas-button" id="newGridBtn">Make New Grid</button>
@@ -130,7 +135,14 @@ const EtchASketch = () => {
         <button className="eas-button" id="rainbowBtn">Rainbow</button>
       </div>
       <div id="container"></div>
-    </div>
+      <Link to="/">
+        <button className="homeBtn">Back to Home</button>
+      </Link>
+      <a href="https://github.com/Markel-Bradford/etch-a-sketch" target="_blank">
+        <img className="whiteGithub" src="images/whitegithub.png" alt="white git hub logo" />
+        <img className="github" src="images/github.png" alt="github logo" />
+      </a>
+    </motion.div>
   );
 };
 

@@ -6,6 +6,7 @@
     padding: 0 50px;
     min-height: 100vh;
     height: 100%;
+    color: #000;
 }
 
 .rps-header {
@@ -127,6 +128,23 @@
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+}
+
+#resetBtn {
+    border: 2px solid black;
+    color: #000;
+}
+
+#resetBtn:hover {
+    background: #fff;
+    transition: .5s;
+}
+
+.rps-footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 
 
