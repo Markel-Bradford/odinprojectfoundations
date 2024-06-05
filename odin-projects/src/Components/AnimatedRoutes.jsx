@@ -5,6 +5,7 @@ import { Homepage } from '../Homepage';
 import LandingPage from '../Pages/LandingPage';
 import EtchASketch from '../Pages/EtchASketch';
 import RPS from '../Pages/RPS';
+import { Calculator } from '../Pages/Calculator';
 
 const AnimatedRoutes = () => {
     const location = useLocation();
@@ -18,6 +19,7 @@ const AnimatedRoutes = () => {
             <Route exact path='/landingpage' element={<LandingPage />} />
             <Route exact path='/etchasketch' element={<EtchASketch />} />
             <Route exact path='/rps' element={<RPS />} />
+            <Route exact path='/calculator' element={<Calculator />} />
         </Routes>
         </AnimatePresence>
     </div>

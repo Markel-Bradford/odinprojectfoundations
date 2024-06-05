@@ -8,11 +8,7 @@
   font-style: normal;
 }
 
-body {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.calc-body {
     height: 100vh;
     font-family: "Orbitron", sans-serif;
 }
@@ -52,7 +48,7 @@ h1 {
 }
 
 
-.row {
+.rows {
     display: flex;
     flex: 1;
     gap: 10px;
@@ -60,7 +56,7 @@ h1 {
     border: none;
 }
 
-.col {
+.cols {
     display: flex;
     flex: 1;
     justify-content: center;
@@ -71,11 +67,6 @@ h1 {
     background: #fff;
     font-size: 24px;
     height: 80px;
-}
-
-button {
-    justify-content: center;
-    align-items: center;
     font-family: "Orbitron", sans-serif;
 }
 
@@ -84,7 +75,7 @@ button {
     color: #fff;
 }
 
-.col:hover, .highlight {
+.cols:hover, .highlight {
     background: #222;
     color: #fff;
 }
@@ -103,7 +94,7 @@ button {
         margin: 50px auto -25px auto;
     }
 
-    .col {
+    .cols {
         font-size: 16px;
     }
 }
