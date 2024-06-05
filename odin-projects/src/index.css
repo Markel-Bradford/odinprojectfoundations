@@ -78,6 +78,7 @@ body {
   border-radius: 8px;
   border: 2px solid #fff;
   background: #213547;
+  cursor: pointer;
 }
 
 .homeBtn:hover {
