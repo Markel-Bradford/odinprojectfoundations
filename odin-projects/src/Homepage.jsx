@@ -22,28 +22,28 @@ export const Homepage = () => {
         <Link to="/landingpage">
           <img
             className="thumbnailImg"
-            src="images/landingpage.png"
+            src="/odinprojectfoundations/images/landingpage.png"
             alt="A landing page for a gym membership created for an odin project assignment."
           />
         </Link>
         <Link to="/rps">
           <img
             className="thumbnailImg"
-            src="images/rps.png"
+            src="/odinprojectfoundations/images/rps.png"
             alt="Rock, paper, scissors game created during the oding project completion"
           />
         </Link>
         <Link to="/etchasketch">
           <img
             className="thumbnailImg"
-            src="images/etchasketch.png"
+            src="/odinprojectfoundations/images/etchasketch.png"
             alt="Interactive etch-a-sketch created during odin project foundations completion"
           />
         </Link>
         <Link to="/calculator">
           <img
             className="thumbnailImg"
-            src="images/calculator.png"
+            src="/odinprojectfoundations/images/calculator.png"
             alt="Functional calculator capable of performing basic math operations."
           />
         </Link>

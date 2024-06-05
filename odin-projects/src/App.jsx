@@ -4,7 +4,7 @@ import AnimatedRoutes from "./Components/AnimatedRoutes";
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename="/odinprojectfoundations">
       <AnimatedRoutes />
     </Router>
   );

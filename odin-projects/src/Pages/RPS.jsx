@@ -33,9 +33,9 @@ const RPS = () => {
     function getComputerChoice() {
       // Create an array that lists all choices for the game
       let choices = [
-        { choice: "Rock!!", img: "images/rock.png" },
-        { choice: "Paper!!", img: "images/paper.png" },
-        { choice: "Scissors!!", img: "images/scissors.png" },
+        { choice: "Rock!!", img: "/odinprojectfoundations/images/rock.png" },
+        { choice: "Paper!!", img: "/odinprojectfoundations/images/paper.png" },
+        { choice: "Scissors!!", img: "/odinprojectfoundations/images/scissors.png" },
       ];
       // Use Math.floor to round down the float that Math.random returns and 
       // return an actual integer that will match the choices index of 0, 1, or 2
@@ -49,7 +49,7 @@ const RPS = () => {
         playerSelection = rock;
         console.log(playerSelection);
         playerMove.innerText = "Rock!!";
-        choiceImg.src = "images/rock.png";
+        choiceImg.src = "/odinprojectfoundations/images/rock.png";
         let computerSelectionObj = getComputerChoice();
         computerSelection = computerSelectionObj.choice;
         computerMove.innerText = computerSelectionObj.choice;
@@ -62,7 +62,7 @@ const RPS = () => {
         playerSelection = paper;
         console.log(playerSelection);
         playerMove.innerText = "Paper!!";
-        choiceImg.src = "images/paper.png";
+        choiceImg.src = "/odinprojectfoundations/images/paper.png";
         let computerSelectionObj = getComputerChoice();
         computerSelection = computerSelectionObj.choice;
         computerMove.innerText = computerSelectionObj.choice;
@@ -75,7 +75,7 @@ const RPS = () => {
         playerSelection = scissors;
         console.log(playerSelection);
         playerMove.innerText = "Scissors!!";
-        choiceImg.src = "images/scissors.png";
+        choiceImg.src = "/odinprojectfoundations/images/scissors.png";
         let computerSelectionObj = getComputerChoice();
         computerSelection = computerSelectionObj.choice;
         computerMove.innerText = computerSelectionObj.choice;
@@ -218,8 +218,8 @@ const RPS = () => {
         <button className="homeBtn">Back to Home</button>
       </Link>
       <a href="https://github.com/Markel-Bradford/rockpaperscissors" target="_blank">
-        <img className="whiteGithub" src="images/whitegithub.png" alt="white git hub logo" />
-        <img className="github" src="images/github.png" alt="github logo" />
+        <img className="whiteGithub" src="/odinprojectfoundations/images/whitegithub.png" alt="white git hub logo" />
+        <img className="github" src="/odinprojectfoundations/images/github.png" alt="github logo" />
       </a>
       <footer className="rps-footer">
         <p>&copy; Markel Bradford 2024</p>

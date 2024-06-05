@@ -34,7 +34,7 @@ const LandingPage = () => {
           </div>
           <img
             className="hero-img"
-            src="images/fitness.jpg"
+            src="/odinprojectfoundations/images/fitness.jpg"
             alt="Group of people exercising."
           />
         </div>
@@ -43,26 +43,26 @@ const LandingPage = () => {
         <h2 id="option-title">What fitness path are you interested in?</h2>
         <div className="option-imgs">
           <div>
-            <img className="option-img" src="images/cardio.jpg" alt="" />
+            <img className="option-img" src="/odinprojectfoundations/images/cardio.jpg" alt="" />
             <figcaption>
               Interested in improving your cardiovascular performance? Learn
               more here!
             </figcaption>
           </div>
           <div>
-            <img className="option-img" src="images/strength.jpg" alt="" />
+            <img className="option-img" src="/odinprojectfoundations/images/strength.jpg" alt="" />
             <figcaption>
               Want to get stronger? Look no further! Click here to get started.
             </figcaption>
           </div>
           <div>
-            <img className="option-img" src="images/yoga.jpg" alt="" />
+            <img className="option-img" src="/odinprojectfoundations/images/yoga.jpg" alt="" />
             <figcaption>
               Need some zen in your life? Click here to check our yoga program.{" "}
             </figcaption>
           </div>
           <div>
-            <img className="option-img" src="images/calesthenics.jpg" alt="" />
+            <img className="option-img" src="/odinprojectfoundations/images/calesthenics.jpg" alt="" />
             <figcaption>
               Do you want functional strength? Learn more about calesthentics
               here.
@@ -104,8 +104,8 @@ const LandingPage = () => {
         <button className="homeBtn">Back to Home</button>
       </Link>
       <a href="https://github.com/Markel-Bradford/landingpage" target="_blank">
-        <img className="whiteGithub" src="images/whitegithub.png" alt="white git hub logo" />
-        <img className="github" src="images/github.png" alt="github logo" />
+        <img className="whiteGithub" src="/odinprojectfoundations/images/whitegithub.png" alt="white git hub logo" />
+        <img className="github" src="/odinprojectfoundations/images/github.png" alt="github logo" />
       </a>
       <footer className="footer">
         <p>Copyright &copy; Markel Bradford 2024</p>

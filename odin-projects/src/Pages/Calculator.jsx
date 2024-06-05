@@ -217,8 +217,8 @@ export const Calculator = () => {
         <button className="homeBtn">Back to Home</button>
       </Link>
       <a href="https://github.com/Markel-Bradford/calculator" target="_blank">
-        <img className="whiteGithub" src="images/whitegithub.png" alt="white git hub logo" />
-        <img className="github" src="images/github.png" alt="github logo" />
+        <img className="whiteGithub" src="/odinprojectfoundations/images/whitegithub.png" alt="white git hub logo" />
+        <img className="github" src="/odinprojectfoundations/images/github.png" alt="github logo" />
       </a>
     </motion.div>
   );
